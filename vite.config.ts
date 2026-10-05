@@ -19,6 +19,8 @@ function renderContent(): Plugin {
 }
 
 export default defineConfig({
+  // relative asset URLs: works at a domain root and under a GitHub Pages project path
+  base: './',
   plugins: [renderContent()],
   build: {
     target: 'es2022',
